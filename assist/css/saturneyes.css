@@ -1,0 +1,104 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+  transition: all 0.3s;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {}
+
+/* Handle */
+::-webkit-scrollbar-thumb {}
+    
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {}
+
+/* Track */
+::-webkit-scrollbar-track {}
+
+/*********/
+
+/* placeholder color */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #a7a7a7;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #a7a7a7;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #a7a7a7;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #a7a7a7;
+} 
+
+
+/* For mozila */
+@-moz-document url-prefix() {}
+
+
+/***** FOR CODE HTML *****/
+header{
+  width: 100%;
+  margin: 0 auto;
+  height:auto;
+}
+a{
+  text-decoration: none;
+  color: #387bb9;
+}
+.bar{
+  border-bottom: solid 1px #dadce0;
+  width: 100%;
+}
+.navbar{
+  width:95%;
+  max-width: 1920px;
+  margin: 0 auto;
+  height:64px;
+  display: flex;
+  align-items: center;
+}
+li{
+  
+}
+.li-navbar{
+  list-style: none;
+  padding: 10px;
+}
+.a-navbar{
+  padding:23px 20px;
+  font-size: 16px;
+} .a-navbar:hover{background-color: #dadce0;}
+.nav-navbar{
+  margin: 0 30px;
+}
+.ul-navbar{
+  display: flex;
+}
+.m-c{
+  margin: 0 auto;
+}
+input{
+  border: solid 1px #a7a7a7;
+  padding:3px 5px;
+  border-radius: 3px;
+}
+input:focus{
+    outline: none;
+}
+button{
+  padding: 3px 5px;
+  border: solid 1px #a7a7a7;
+  background-color: #e4e4e4;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/*************** END **************/
