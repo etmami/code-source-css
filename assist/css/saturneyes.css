@@ -44,46 +44,28 @@ html{
 
 
 /***** FOR CODE HTML *****/
-header{
+header, main, footer{
   width: 100%;
   margin: 0 auto;
   height:auto;
 }
-a{
+h1 {
+  font-size: 2.2em;
+}
+p {
+  color: #666;
+  line-height: 2;
+}
+a {
   text-decoration: none;
-  color: #387bb9;
+  color: #5485b3;
+  user-select: none;
 }
-.bar{
-  border-bottom: solid 1px #dadce0;
-  width: 100%;
+img {
+  pointer-events: none;
 }
-.navbar{
-  width:95%;
-  max-width: 1920px;
-  margin: 0 auto;
-  height:64px;
-  display: flex;
-  align-items: center;
-}
-li{
-  
-}
-.li-navbar{
-  list-style: none;
-  padding: 10px;
-}
-.a-navbar{
-  padding:23px 20px;
-  font-size: 16px;
-} .a-navbar:hover{background-color: #dadce0;}
-.nav-navbar{
-  margin: 0 30px;
-}
-.ul-navbar{
-  display: flex;
-}
-.m-c{
-  margin: 0 auto;
+textarea {
+  resize: none; /* both */
 }
 input{
   border: solid 1px #a7a7a7;
@@ -91,7 +73,7 @@ input{
   border-radius: 3px;
 }
 input:focus{
-    outline: none;
+  outline: none;
 }
 button{
   padding: 3px 5px;
@@ -100,5 +82,85 @@ button{
   cursor: pointer;
   border-radius: 3px;
 }
+li{
+  list-style: none;
+}
+/**************************/
 
+/* center */
+.m-c{ /* object to centre with margin*/
+  margin: 0 auto;
+}
+.d-f-c { /* object to centre with display flex*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p-c { /* object to centre with position*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.p-left{ /* object to left */
+  position: absolute;
+  left: 0;
+}
+.p-right{ /* object to right */
+  position: absolute;
+  right:0;
+}
 /*************** END **************/
+
+/* HEADER - NAVBAR */
+.bar{
+  border-bottom: solid 1px #dadce0;
+  width: 100%;
+}
+.logo{
+  width:50px;
+  height: 50px;
+}
+.logo img{
+  width:40px;
+}
+.navbar{
+  width:95%;
+  max-width: 1920px;
+  margin: 0 auto;
+  height:64px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.nav-navbar{
+  width: 100%;
+  justify-content: space-between;
+}
+.ul-navbar{
+  display: flex;
+}
+.li-navbar{
+  margin: 10px;
+}
+.a-navbar{
+  padding:23px 20px;
+}
+.btn-a{
+  border: solid 1px #dadce0;
+  padding: 8px 10px;
+  border-radius: 3px;
+  display: inline-block;
+}
+/*************** END **************/
+
+.sectionA{
+  width:95%;
+  max-width: 1920px;
+  padding: 50px 0;
+}
