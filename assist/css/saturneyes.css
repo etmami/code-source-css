@@ -96,7 +96,7 @@ li{
   justify-content: center;
   align-items: center;
 }
-.p-c { /* object to centre with position*/
+.p-c { /* object to centre with position absolute */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -117,14 +117,17 @@ li{
 }
 /*************** END **************/
 
+
 /* HEADER - NAVBAR */
+/*************** START **************/
+/* ID: #NAV1 */
 .bar{
   border-bottom: solid 1px #dadce0;
   width: 100%;
 }
 .logo{
-  width:50px;
-  height: 50px;
+  width:auto;
+  height:auto;
 }
 .logo img{
   width:40px;
@@ -157,8 +160,13 @@ li{
   border-radius: 3px;
   display: inline-block;
 }
-/*************** END **************/
-
+/*************** END #NAV1 **************/
+/* ID: #NAV2 */
+.search-navbar{
+  margin-left:25px;
+  width:100%;
+}
+/*************** END #NAV2 **************/
 .sectionA{
   width:95%;
   max-width: 1920px;
