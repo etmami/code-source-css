@@ -1,1 +1,1 @@
-yourDomain = ""
+yourDomain = "/"

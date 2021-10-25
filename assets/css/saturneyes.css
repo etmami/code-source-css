@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: system-ui;
   transition: all 0.3s;
+  -webkit-tap-highlight-color:transparent;
 }
 html{
     scroll-behavior: smooth;
@@ -165,10 +166,17 @@ li{
 /* ID: #NAV2 */
 .search-navbar{
   margin-left:25px;
+  padding: 8px 10px;
 }
 /*************** END #NAV2 **************/
 .sectionA{
   width:95%;
   max-width: 1920px;
   padding: 50px 0;
+}
+
+/* FOR: icons responsive */
+.resp-nav{
+  font-size: 28px;
+  display:none;
 }
